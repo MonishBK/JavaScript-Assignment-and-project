@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .display_container {
+            width: 100%;
+            height: 100vh;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 60%;
+            height: 50vh;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+            flex-direction: column;
+
+        }
+
+        .container .txtdisplay {
+            width: 100%;
+            height: 60px;
+            background-color: blueviolet;
+            margin-bottom: 50px;
+            padding: 10px;
+            display: flex;
+            line-height: 60px;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .container .inputflied {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           /* background-color: aqua; */
+        }
+        input{
+            width: 70%;
+            border-radius: 10px;
+            border: 1px solid black;
+            outline: none;
+            margin-left: 20px;
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+        label{
+            font-size: 30px;
+        }
+        button{
+            width: 30%;
+            border-radius: 20px;
+            margin-top: 30px;
+            border: 1px solid black;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="display_container">
+        <div class="container">
+            <h1 class="txtdisplay"> </h1> <br>
+            <div class="inputflied">
+                <label for="name">Name :</label>
+                <input type="text" id="inputtxt" placeholder="Enter your name">
+            </div>
+            <button onclick="display()">Click Me</button>
+        </div>
+    </div>
+
+    <script>
+
+        const display = () =>{
+            const input = document.querySelector("input");
+            const show = document.querySelector(".txtdisplay");
+   
+            show.innerHTML = `Hello ${input.value} !!.. 😍`;
+        } 
+
+
+    </script>
+</body>
+
+</html>
