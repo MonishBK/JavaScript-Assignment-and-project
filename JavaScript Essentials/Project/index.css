@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main_container{
+    width: 100;
+    height: 120vh;
+    background-image: linear-gradient(120deg, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.4) 50% ), url("./images/bgpic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem 5rem;
+}
+
+.hedding{
+    width: 90%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.headder{
+    width: 90%;
+    height: 50px;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.cards_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 18%;
+    min-height: 280px;
+    background-image: url("./images/cover.png"); 
+    background-position: center;
+    background-size: cover;
+    border: 5px solid white;
+    margin: 1rem;
+    box-shadow: 2px 4px 10px  rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/cover.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid white;
+}
+
+.opned{
+    display: none;
+}
+
